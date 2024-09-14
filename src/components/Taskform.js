@@ -30,10 +30,10 @@ const Taskform = () => {
         try {
             if (id) {
                 await updateTask(id, taskData);
-                navigate('/');
+                navigate('/tasklist');
             } else {
                 await createTask(taskData);
-                navigate('/');
+                navigate('/tasklist');
             }
         } catch (error) {
             setError('Error submitting form.');
