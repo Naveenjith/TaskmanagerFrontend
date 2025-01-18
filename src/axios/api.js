@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Create an axios instance
+// Creating an axios instance
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api', // Replace with your API base URL
+  baseURL: 'http://localhost:8000/api', 
 });
 
 // Request interceptor to add the Bearer token
